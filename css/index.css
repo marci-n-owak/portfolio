@@ -20,6 +20,8 @@ body{
   opacity: 0.8;
 }
 .introText{
+  padding-left: 2vh;
+  padding-right: 2vh;
   color: white;
   font-family: 'Courier New', Courier, monospace;
   font-size: 5vh;
@@ -67,7 +69,7 @@ body{
 
 #about{
   background-color: #e9ecef;
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: 140px;
 }
 #about img{
@@ -92,10 +94,16 @@ body{
   font-size: 30px;
   color: #616161;
 }
+.aboutLeft{
+  padding-top: 20px;
+}
 .aboutText{
   font-family: 'Raleway';
   font-size: 17px;
   color: #616161;
+}
+.aboutRight{
+  padding-top: 20px;
 }
 .progress{
   background-color: white !important;
