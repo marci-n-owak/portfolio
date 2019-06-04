@@ -204,10 +204,10 @@
         <i class="fas fa-angle-double-up text-center" onclick="document.getElementById('intro').scrollIntoView();"></i>
       </div>
       <div class="footerIcons">
-        <div class="footerIcon" onclick="window.open('www.facebook.com/maszynistazzset','_blank');"><i class="fab fa-facebook-f"></i></div>
-        <div class="footerIcon" onclick="window.open('www.linkedin.com/in/marcin-nowak-7959a5187','_blank');"><i class="fab fa-linkedin-in"></i></div>
-        <div class="footerIcon" onclick="window.open('www.github.com/marci-n-owak','_blank');"><i class="fab fa-github"></i></div>
-        <div class="footerIcon" onclick="window.open('mailto:marcin.nowak21a@wp.pl');"><i class="fas fa-envelope"></i></div>
+        <div class="footerIcon" onclick="goToSite('www.facebook.com/maszynistazzset')"><i class="fab fa-facebook-f"></i></div>
+        <div class="footerIcon" onclick="goToSite('www.linkedin.com/in/marcin-nowak-7959a5187')"><i class="fab fa-linkedin-in"></i></div>
+        <div class="footerIcon" onclick="goToSite('www.github.com/marci-n-owak')"><i class="fab fa-github"></i></div>
+        <div class="footerIcon" onclick="window.open('mailto:marcin.nowak21a@wp.pl')"><i class="fas fa-envelope"></i></div>
       </div>
       <div class="footerText">
         MARCIN NOWAK <span class="footerHilight">©2019</span>.
@@ -276,14 +276,18 @@
       });
     </script>
     <script>
-        $(document).scroll(function() {
-            var y = $(this).scrollTop();
-            if (y > (screen.height - 100)) {
-                $('.navbar').addClass("fixed-top");
-            } else {
-                $('.navbar').removeClass("fixed-top");
-            }
-        });
+      function goToSite(url){
+        var https = "https://";
+        window.open(https + url);
+      }
+      $(document).scroll(function() {
+          var y = $(this).scrollTop();
+          if (y > (screen.height - 100)) {
+              $('.navbar').addClass("fixed-top");
+          } else {
+              $('.navbar').removeClass("fixed-top");
+          }
+      });
     </script>
 </body>
 
