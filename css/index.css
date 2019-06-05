@@ -6,6 +6,42 @@ body{
   overflow-x: hidden;
   overflow-y: auto;
 }
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.5); 
+  padding-top: 60px;
+  color: #E31B6D;
+}
+.modalBack{
+  height: 50vh;
+  width: 50vh;
+  background-color: white;
+  border-radius: 20px;
+}
+.modalHeader{
+  padding-top: 10vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 4vh;
+}
+.modalText{
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 2vh;
+}
+
 #intro{
   height: 100vh;
   width: 100vw;

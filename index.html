@@ -20,7 +20,15 @@
 </head>
 
 <body> 
-    
+    <div id="emailDiv" class="modal">
+      <center>
+        <div class="modalBack">
+          <div class="modalHeader">Github nie wspiera w wersji free backendu :c</div>
+          <div class="modalText">Skontaktuj się ze mną przez podane socialmedia lub e-mail w stopce ;)</div>
+        </div>
+      </center>
+    </div>
+
     <section id="intro">
         <div class="introGif">
             <p class="introText text-center">Witaj, jestem <span class="hilight">Marcin Nowak</span>.</p>
@@ -76,30 +84,30 @@
             </div>
           </div>
           <div class="col-md-2 col-sm-2"></div>
-          <div class="col-md-6 col-sm-6 showcase-right-fast">
+          <div class="col-md-6 col-sm-6 aboutRight showcase-right-fast">
             <div class="progress">
               <div class="progressLeft">JS</div>
-              <div class="progress-bar progress-bar-striped bg-info barSlide1" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+              <div class="progress-bar progress-bar-striped bg-info barSlide1" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">60%</div>
             </div>
             <div class="progress">
               <div class="progressLeft">HTML</div>
-              <div class="progress-bar progress-bar-striped bg-info barSlide2" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+              <div class="progress-bar progress-bar-striped bg-info barSlide2" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">55%</div>
             </div>
             <div class="progress">
               <div class="progressLeft">CSS</div>
-              <div class="progress-bar progress-bar-striped bg-info barSlide3" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+              <div class="progress-bar progress-bar-striped bg-info barSlide3" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">55%</div>
             </div>
             <div class="progress">
               <div class="progressLeft">C++</div>
-              <div class="progress-bar progress-bar-striped bg-info barSlide4" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+              <div class="progress-bar progress-bar-striped bg-info barSlide4" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">30%</div>
             </div>
             <div class="progress">
               <div class="progressLeft">GIMP</div>
-              <div class="progress-bar progress-bar-striped bg-info barSlide5" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              <div class="progress-bar progress-bar-striped bg-info barSlide5" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">75%</div>
             </div>
             <div class="progress">
               <div class="progressLeft">Corel</div>
-              <div class="progress-bar progress-bar-striped bg-info barSlide6" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+              <div class="progress-bar progress-bar-striped bg-info barSlide6" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">45%</div>
             </div>
           </div>
         </div>
@@ -118,8 +126,8 @@
               <div class="card" style="width: 300px;">
                 <img class="card-img-top" src="images/project1.PNG" alt="Card image cap">
                 <div class="card-body">
-                  <div class="projectsButton" onClick="document.getElementById('about').scrollIntoView();">Przejdź</div>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="projectsButton" onclick="goToSite('marci-n-owak.github.io/askme/')">Przejdź</div>
+                  <p class="card-text">Webowa aplikacja do nauki słówek. Pozwala tworzyć, łączyć i rozwiązywać stworzone przez użytkownika fiszki.</p>
                 </div>
               </div>
             </center>
@@ -129,8 +137,8 @@
               <div class="card" style="width: 300px;">
                 <img class="card-img-top" src="images/project2.PNG" alt="Card image cap">
                 <div class="card-body">
-                  <div class="projectsButton" onClick="document.getElementById('about').scrollIntoView();">Przejdź</div>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="projectsButton" onclick="goToSite('marci-n-owak.github.io/umeet/)">Przejdź</div>
+                  <p class="card-text">Aktualnie tylko szablon strony internetowej. Projekt rozwijany w czasie wolnym. Cel to aplikacja pomagająca dobrać termin spotkania pasujący wielu użytkownikom. </p>
                 </div>
               </div>
             </center>
@@ -140,8 +148,8 @@
               <div class="card" style="width: 300px;">
                 <img class="card-img-top" src="images/project3.PNG" alt="Card image cap">
                 <div class="card-body">
-                  <div class="projectsButton" onClick="document.getElementById('about').scrollIntoView();">Przejdź</div>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="projectsButton" onclick="goToSite('marci-n-owak.github.io/efiszki')">Przejdź</div>
+                  <p class="card-text">Strona internetowa projektu szkolnego, rozwijanego z przydzieloną grupą uczniów.</p>
                 </div>
               </div>
             </center>
@@ -163,7 +171,7 @@
           </div>
           <div class="col-md-3 col-sm-3"></div>
 		      <div class="col-md-6 col-sm-6 showcase-bottom-fast">
-            <form action="scripts/mail.php" method="post">
+            <form>
               <div class="card-body p-3">
                 <div class="form-group">
                   <div class="input-group mb-2">
@@ -190,7 +198,7 @@
                   </div>
                 </div>
               </div>
-              <input type="submit" value="Wyślij" class="contactButton" style="float: right; margin-right: 20px">
+              <input type="submit" value="Wyślij" class="contactButton" style="float: right; margin-right: 20px" onclick="sendEmail()">
               </div>
             </form>
           </div>
@@ -276,6 +284,16 @@
       });
     </script>
     <script>
+      var modal = document.getElementById('emailDiv');
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+          }
+      } 
+      function sendEmail(){
+        document.getElementById('emailDiv').style.display='block';
+      }
       function goToSite(url){
         var https = "https://";
         window.open(https + url);
